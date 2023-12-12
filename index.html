@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@v1.1.1/dist/iconify.min.css" />
+  <title>My Portfolio</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <h1>Sufyan Fauzan</h1>
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+      <!-- <li id="theme-toggle"><img src="assets/images/icons/moon.png" width="20"></li> -->
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <hr id="about">
+  <section class="hero">
+    <div class="bio" data-aos="fade-right">
+      <h2 class="is-bio bio-title">Sufyan Fauzan</h2>
+      <h3 class="is-bio bio-text">Web Developer</h3>
+      <p class="is-bio bio-text">
+        "I am a web developer from Indonesia with over one year of experience.
+        I am dedicated to crafting user-friendly, responsive, and accessible
+        websites, with an emphasis on maintainability and scalability in
+        development, while adhering to current industry best practices.
+        Exploring new things has always led me to become a better programmer."
+      </p>
+      <a href="https://github.com/sufyanfauzan"><i class="fab fa-github fa-2x bio-logo"></i></a>
+      <a href="https://www.linkedin.com/in/sufyanfauzan/"><i class="fab fa-linkedin fa-2x bio-logo"></i></a>
+      <a href=""><i class="fas fa-envelope fa-2x bio-logo"></i></a>
+    </div>
+  </section>
+  <br>
+
+  <!-- More about -->
+  <br>
+  <section class="more-about" data-aos="fade-left">
+    <div class="more-about-text">
+      <h2 class="bio-title-2">More About Me</h2>
+      <p class="is-bio bio-text">
+        Hi, I'm Sufyan Fauzan, a student majoring software engineer at
+        Vocational High School Wikrama Bogor
+      </p>
+      <p class="is-bio bio-text">
+        Since childhood, technology has been my playground. ignited a
+        passion for programming that continues to grow today. So i fell
+        deeply in love with the world of web development.
+      </p>
+      <p class="is-bio bio-text">
+        Currently, I'm honing my skills in HTML, CSS, PHP, and JavaScript, the
+        building blocks of web development. I'm also exploring frameworks
+        like Laravel, expanding my knowledge to become a
+        well-rounded developer.
+      </p>
+    </div>
+  </section>
+  <br>
+  <!-- Skills section -->
+  <br>
+  <section class="skills" id="skills" data-aos="fade-up">
+    <h2 class="skills-header">Skills</h2>
+    <div class="tab-titles">
+      <p class="tab-links active-link" data-tab="techstak" onclick="opentab('techstak', event)">Tech Stak</p>
+      <p class="tab-links" data-tab="tools" onclick="opentab('tools', event)">Tools</p>
+    </div>
+    <div class="tab-contents active-tab" id="techstak">
+      <div class="skills-wrap">
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/html-5-svgrepo-com.svg"></img>
+          </div>
+          <p>HTML5</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/css-3-svgrepo-com.svg"></img>
+          </div>
+          <p>CSS3</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/bootstrap-svgrepo-com.svg"></img>
+          </div>
+          <p>Bootstrap</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/php-svgrepo-com.svg"></img>
+          </div>
+          <p>PHP</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/laravel-svgrepo-com.svg"></img>
+          </div>
+          <p>Laravel</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/javascript-svgrepo-com.svg"></img>
+          </div>
+          <p>JavaScript</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/skills/mysql.png"></img>
+          </div>
+          <p>MySQL</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- tools -->
+    <div class="tab-contents" id="tools">
+      <div class="skills-wrap">
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/tools/visual-studio-code-logo-svgrepo-com.svg"></img>
+          </div>
+          <p>VS Code</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/tools/github-color-svgrepo-com.svg"></img>
+          </div>
+          <p>Github</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/tools/git-svgrepo-com.svg"></img>
+          </div>
+          <p>Git</p>
+        </div>
+        <div class="skills-content" data-aos="fade-up">
+          <div class="skills-icon">
+            <img src="assets/images/tools/figma-svgrepo-com.svg"></img>
+          </div>
+          <p>Figma</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects section -->
+  <section class="projects" id="projects" data-aos="fade-up" style="padding: 200px;">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card" data-aos="fade-up-left">
+        <img src="assets/images/project/masjid-project.png" alt="expense-tracker" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
+        <h3 class="project-title">Masjid Wikrama</h3>
+        <p class="project-details">
+          This is a final semester mosque project that I made using PHP and Javascript.
+        </p>
+        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
+      </div>
+      <div class="project-container project-card" data-aos="fade-up-left">
+        <img src="assets/images/project/agendaHarian.png" alt="netflic-clone" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
+        <h3 class="project-title">Agenda Harian</h3>
+        <p class="project-details">
+          This is a Daily Agenda project for teacher needs that we created with the team using PHP and Javascript.
+        </p>
+      </div>
+      <div class="project-container project-card" data-aos="fade-up-left">
+        <img src="assets/images/project/apotek-app.png" alt="greeny-earth" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
+        <h3 class="project-title">Apotek-App</h3>
+        <p class="project-details">
+          This is a pharmacy-app project from classroom learning results created using Laravel and Bootstrap
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sertifikat -->
+  <section class="certificate" id="projects" data-aos="fade-up">
+    <h2 class="certificate-title">Certificate</h2>
+    <div class="certificate-container">
+      <div class="carousel-container">
+        <div class="carousel-slide" id="slide1">
+          <img src="assets/images/certificate/dasar_pemrograman_web.png">
+        </div>
+        <div class="carousel-slide" id="slide2">
+          <img src="assets/images/certificate/data_101.png">
+        </div>
+        <div class="carousel-slide" id="slide3">
+          <img src="assets/images/certificate/git_github.png">
+        </div>
+        <div class="carousel-slide" id="slide4">
+          <img src="assets/images/certificate/K3.png">
+        </div>
+        <div class="carousel-slide" id="slide5">
+          <img src="assets/images/certificate/memulai_dasar_pemrograman.png">
+        </div>
+        <div class="carousel-slide" id="slide6">
+          <img src="assets/images/certificate/programming_101.png">
+        </div>
+        <div class="carousel-slide" id="slide7">
+          <img src="assets/images/certificate/software_developer.png">
+        </div>
+        <button class="btn-prev" onclick="prevSlide()"><</button>
+      <button class="btn-next" onclick="nextSlide()">></button>
+      </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact" id="contact" style="padding: 200px;"> 
+    <h2 class="contact-title">Contact</h2>
+    <div class="contact-container">
+      <a href="https://github.com/sufyanfauzan"><i class="fab fa-github fa-2x bio-logo"></i><p>https://github.com/sufyanfauzan</p></a>
+    </div>
+    <div class="contact-container">
+      <a href="https://www.linkedin.com/in/sufyanfauzan/"><i class="fab fa-linkedin fa-2x bio-logo"></i><p>https://www.linkedin.com/in/sufyanfauzan/</p></a>
+    </div>
+    <div class="contact-container">
+      <a href="sufyanfauzan69@gmail.com"><i class="fas fa-envelope fa-2x bio-logo"></i><p>sufyanfauzan69@gmail.com</p></a>
+    </div>
+  </section>
+
+  <!-- Scroll to top -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+      alt=""/></i>
+
+  <!-- Footer section -->
+  <footer>
+    <p class="copy">&copy; Copyright 2023</p>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1500,
+    });
+  </script>
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/tabNewSkills.js"></script>
+  <script src="assets/js/currentSlide.js"></script>
+</body>
+</html>
