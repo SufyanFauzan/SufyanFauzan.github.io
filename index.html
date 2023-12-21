@@ -2,261 +2,235 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!--CSS Styles -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconify/iconify@v1.1.1/dist/iconify.min.css" />
-  <title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
 </head>
-
 <body>
-  <!-- Navbar -->
-  <nav>
-    <h1>Sufyan Fauzan</h1>
-    <ul class="navigation">
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-      <!-- <li id="theme-toggle"><img src="assets/images/icons/moon.png" width="20"></li> -->
-    </ul>
-    <button class="burger-menu" id="burger-menu">
-      <ion-icon class="bars" name="menu-outline"></ion-icon>
-    </button>
-  </nav>
+    <div class="container">
+        <section class="landing">
+            <div class="row vertical-center">
+                <div class="col-lg-8 text-left pb-5">
+                    <h1 class="display-2">Sufyan Fauzan</h1>
+                    <p class="lead pl-2">Web Developer</p>
+                </div>
+        </section>
 
-  <!-- Hero Section -->
-  <hr id="about">
-  <section class="hero">
-    <div class="bio" data-aos="fade-right">
-      <h2 class="is-bio bio-title">Sufyan Fauzan</h2>
-      <h3 class="is-bio bio-text">Web Developer</h3>
-      <p class="is-bio bio-text">
-        "I am a web developer from Indonesia with over one year of experience.
-        I am dedicated to crafting user-friendly, responsive, and accessible
-        websites, with an emphasis on maintainability and scalability in
-        development, while adhering to current industry best practices.
-        Exploring new things has always led me to become a better programmer."
-      </p>
-      <a href="https://github.com/sufyanfauzan"><i class="fab fa-github fa-2x bio-logo"></i></a>
-      <a href="https://www.linkedin.com/in/sufyanfauzan/"><i class="fab fa-linkedin fa-2x bio-logo"></i></a>
-      <a href=""><i class="fas fa-envelope fa-2x bio-logo"></i></a>
+        <section class="mt-5 mb-5">
+            <h4 class="display-4">A little about me,</h4>
+            <div class="row">
+                <div class="col-lg-6 wrap text-left">
+                    <div class="about-desc">
+                        <h1 class="bold-text">About</h1>
+                        <div class="pt-5">
+                            <h2 class="mb-5">Hello!</h2>
+                            <p>"I am a web developer from Indonesia with over one year of experience. I am dedicated to crafting user-friendly, responsive, and accessible websites, with an emphasis on maintainability and scalability in development, while adhering to current industry best practices. Exploring new things has always led me to become a better programmer."
+                            </p>
+                            <ul class="social-links list-unstyled mt-4">
+                                <li><a href="#">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                    </a></li>
+                                <li><a href="https://github.com/sufyanfauzan">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                    </a></li>
+                                <li><a href="https://www.linkedin.com/in/sufyanfauzan/">
+                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="interests pt-5 pb-5">
+            <h1 class="display-4">Tech I'm familiar with</h1>
+            <h1 class="bold-text bg-text">Tech Stack</h1>
+            <div class="row pt-5">
+                <div class="col-lg-2 col-md-4">
+                    <div class="icon-box">
+                        <!-- <ion-icon name="logo-html5"></ion-icon> -->
+                        <img src="assets/images/skills/html-5-svgrepo-com.svg" alt="" width="50">
+                        <h3>HTML5</h3>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/css-3-svgrepo-com.svg" alt="" width="50">
+                        <h3>CSS3</h3>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-4 mt-md-0">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/javascript-svgrepo-com.svg" alt="" width="50">
+                        <h3>Javascript</h3>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/bootstrap-svgrepo-com.svg" alt="" width="50">
+                        <h3>Bootstrap</h3>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/php-svgrepo-com.svg" alt="" width="50">
+                        <h3>PHP</h3>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mt-4 mt-lg-0">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/laravel-svgrepo-com.svg" alt="" width="50">
+                        <h3>Laravel</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 mt-4">
+                    <div class="icon-box">
+                        <img src="assets/images/skills/mysql-logo-svgrepo-com.svg" alt="" width="50">
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <h1 class="display-4 mt-5">Some of my Recent Projects</h4>
+                <h1 class="bold-text bg-text">Projects</h1>
+                <div class="row mt-5 mb-5">
+                    <div class="col-md-4">
+                        <div class="blog-entry">
+                            <a href="#">
+                                <img class="img-fluid" src="assets/images/project/agendaHarian.png">
+                            </a>
+                            <div class="text p-4 d-block">
+                                <h3 class="heading"><a class="link" href="#">Agenda Harian</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-entry">
+                            <a href="#">
+                                <img class="img-fluid" src="assets/images/project/apotek-app.png">
+                            </a>
+                            <div class="text p-4">
+                                <h3 class="heading"><a class="link" href="#">Apotek-App</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="blog-entry">
+                            <a href="#">
+                                <img class="img-fluid" src="assets/images/project/masjid-project.png">
+                            </a>
+                            <div class="text p-4">
+                                <h3 class="heading"><a class="link" href="#">Masjid Wikrama</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <div class="blog-entry">
+                            <a href="#">
+                                <img class="img-fluid" src="https://placeimg.com/640/640/any">
+                            </a>
+                            <div class="text p-4">
+                                <div class="meta mb-3">
+                                    <div>July 22, 2020</div>
+                                </div>
+                                <h3 class="heading"><a class="link" href="#">You like jazz?</a></h3>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+        </section>
+        <section>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="cards-wrapper">
+                    <div class="card">
+                      <img src="assets/images/certificate/dasar_pemrograman_web.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="assets/images/certificate/data_101.png" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card d-none d-md-block">
+                      <img src="assets/images/certificate/git_github.png" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="assets/images/certificate/K3.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="assets/images/certificate/memulai_dasar_pemrograman.png" class="card-img-top" alt="...">
+                      </div>
+                      <div class="card d-none d-md-block">
+                        <img src="assets/images/certificate/programming_101.png" class="card-img-top" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="cards-wrapper">
+                      <div class="card">
+                        <img src="assets/images/certificate/software_developer.png" class="card-img-top" alt="...">
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </section>
+        <section>
+            <h1 class="display-4 mt-5">Let's Talk</h1>
+            <h1 class="bold-text bg-text">Contact</h1>
+                    <div class="text-left">
+                            <div class="pt-5">
+                                <ul class="social-links list-unstyled mt-4">
+                                    <li><a href="#">
+                                            <ion-icon name="mail-outline"></ion-icon>
+                                        </a></li>
+                                    <li><a href="https://github.com/sufyanfauzan">
+                                            <ion-icon name="logo-github"></ion-icon>
+                                        </a></li>
+                                    <li><a href="https://www.linkedin.com/in/sufyanfauzan/">
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a></li>
+                                    <li><a href="#">
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a></li>
+                                </ul>
+                            </div>
+                    </div>
+                <div class="mt-5 mb-5 text-center">
+                    <h4>© Copyright 2023</h1>
+                </div>
+        </section>
     </div>
-  </section>
-  <br>
 
-  <!-- More about -->
-  <br>
-  <section class="more-about" data-aos="fade-left">
-    <div class="more-about-text">
-      <h2 class="bio-title-2">More About Me</h2>
-      <p class="is-bio bio-text">
-        Hi, I'm Sufyan Fauzan, a student majoring software engineer at
-        Vocational High School Wikrama Bogor
-      </p>
-      <p class="is-bio bio-text">
-        Since childhood, technology has been my playground. ignited a
-        passion for programming that continues to grow today. So i fell
-        deeply in love with the world of web development.
-      </p>
-      <p class="is-bio bio-text">
-        Currently, I'm honing my skills in HTML, CSS, PHP, and JavaScript, the
-        building blocks of web development. I'm also exploring frameworks
-        like Laravel, expanding my knowledge to become a
-        well-rounded developer.
-      </p>
-    </div>
-  </section>
-  <br>
-  <!-- Skills section -->
-  <br>
-  <section class="skills" id="skills" data-aos="fade-up">
-    <h2 class="skills-header">Skills</h2>
-    <div class="tab-titles">
-      <p class="tab-links active-link" data-tab="techstak" onclick="opentab('techstak', event)">Tech Stak</p>
-      <p class="tab-links" data-tab="tools" onclick="opentab('tools', event)">Tools</p>
-    </div>
-    <div class="tab-contents active-tab" id="techstak">
-      <div class="skills-wrap">
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/html-5-svgrepo-com.svg"></img>
-          </div>
-          <p>HTML5</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/css-3-svgrepo-com.svg"></img>
-          </div>
-          <p>CSS3</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/bootstrap-svgrepo-com.svg"></img>
-          </div>
-          <p>Bootstrap</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/php-svgrepo-com.svg"></img>
-          </div>
-          <p>PHP</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/laravel-svgrepo-com.svg"></img>
-          </div>
-          <p>Laravel</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/javascript-svgrepo-com.svg"></img>
-          </div>
-          <p>JavaScript</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/skills/mysql.png"></img>
-          </div>
-          <p>MySQL</p>
-        </div>
-      </div>
-    </div>
+    <!-- Made by Kartik Choudhary <3 -->
+    <!-- You can remove the credits if you want lol, but I'd appreciate attribution :) -->
 
-    <!-- tools -->
-    <div class="tab-contents" id="tools">
-      <div class="skills-wrap">
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/tools/visual-studio-code-logo-svgrepo-com.svg"></img>
-          </div>
-          <p>VS Code</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/tools/github-color-svgrepo-com.svg"></img>
-          </div>
-          <p>Github</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/tools/git-svgrepo-com.svg"></img>
-          </div>
-          <p>Git</p>
-        </div>
-        <div class="skills-content" data-aos="fade-up">
-          <div class="skills-icon">
-            <img src="assets/images/tools/figma-svgrepo-com.svg"></img>
-          </div>
-          <p>Figma</p>
-        </div>
-      </div>
-    </div>
-  </section>
+    <!-- Scripts -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
-  <!-- Projects section -->
-  <section class="projects" id="projects" data-aos="fade-up" style="padding: 200px;">
-    <h2 class="projects-title">Some of my Recent Projects</h2>
-    <div class="projects-container">
-      <div class="project-container project-card" data-aos="fade-up-left">
-        <img src="assets/images/project/masjid-project.png" alt="expense-tracker" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
-        <h3 class="project-title">Masjid Wikrama</h3>
-        <p class="project-details">
-          This is a final semester mosque project that I made using PHP and Javascript.
-        </p>
-        <!-- <a href="#" target="_blank" class="project-link">Check it Out</a> -->
-      </div>
-      <div class="project-container project-card" data-aos="fade-up-left">
-        <img src="assets/images/project/agendaHarian.png" alt="netflic-clone" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
-        <h3 class="project-title">Agenda Harian</h3>
-        <p class="project-details">
-          This is a Daily Agenda project for teacher needs that we created with the team using PHP and Javascript.
-        </p>
-      </div>
-      <div class="project-container project-card" data-aos="fade-up-left">
-        <img src="assets/images/project/apotek-app.png" alt="greeny-earth" loading="lazy" class="project-pic" draggable="false" (dragstart)="false;" class="unselectable"/>
-        <h3 class="project-title">Apotek-App</h3>
-        <p class="project-details">
-          This is a pharmacy-app project from classroom learning results created using Laravel and Bootstrap
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sertifikat -->
-  <section class="certificate" id="projects" data-aos="fade-up">
-    <h2 class="certificate-title">Certificate</h2>
-    <div class="certificate-container">
-      <div class="carousel-container">
-        <div class="carousel-slide" id="slide1">
-          <img src="assets/images/certificate/dasar_pemrograman_web.png">
-        </div>
-        <div class="carousel-slide" id="slide2">
-          <img src="assets/images/certificate/data_101.png">
-        </div>
-        <div class="carousel-slide" id="slide3">
-          <img src="assets/images/certificate/git_github.png">
-        </div>
-        <div class="carousel-slide" id="slide4">
-          <img src="assets/images/certificate/K3.png">
-        </div>
-        <div class="carousel-slide" id="slide5">
-          <img src="assets/images/certificate/memulai_dasar_pemrograman.png">
-        </div>
-        <div class="carousel-slide" id="slide6">
-          <img src="assets/images/certificate/programming_101.png">
-        </div>
-        <div class="carousel-slide" id="slide7">
-          <img src="assets/images/certificate/software_developer.png">
-        </div>
-        <button class="btn-prev" onclick="prevSlide()"><</button>
-      <button class="btn-next" onclick="nextSlide()">></button>
-      </div>
-  </section>
-
-  <!-- contact -->
-  <section class="contact" id="contact" style="padding: 200px;"> 
-    <h2 class="contact-title">Contact</h2>
-    <div class="contact-container">
-      <a href="https://github.com/sufyanfauzan"><i class="fab fa-github fa-2x bio-logo"></i><p>https://github.com/sufyanfauzan</p></a>
-    </div>
-    <div class="contact-container">
-      <a href="https://www.linkedin.com/in/sufyanfauzan/"><i class="fab fa-linkedin fa-2x bio-logo"></i><p>https://www.linkedin.com/in/sufyanfauzan/</p></a>
-    </div>
-    <div class="contact-container">
-      <a href="sufyanfauzan69@gmail.com"><i class="fas fa-envelope fa-2x bio-logo"></i><p>sufyanfauzan69@gmail.com</p></a>
-    </div>
-  </section>
-
-  <!-- Scroll to top -->
-  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
-      alt=""/></i>
-
-  <!-- Footer section -->
-  <footer>
-    <p class="copy">&copy; Copyright 2023</p>
-  </footer>
-
-  <!-- Website scripts -->
-  <script src="assets/js/app.js"></script>
-
-  <!-- Ion icons scripts -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1500,
-    });
-  </script>
-  <script src="assets/js/theme.js"></script>
-  <script src="assets/js/tabNewSkills.js"></script>
-  <script src="assets/js/currentSlide.js"></script>
 </body>
+
 </html>
